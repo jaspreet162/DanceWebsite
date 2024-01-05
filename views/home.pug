@@ -1,0 +1,49 @@
+extends layout.pug 
+
+block scripts 
+   script(src='/static/index.js')
+
+block style 
+   style 
+     include ../static/style.css
+
+block content
+ 
+  section#introsection 
+        div  Welcome to Magical Moves Dance Academy
+        div.small Eat Sleep Dance Repeat
+         
+  section#mission 
+        h2 Our Mission
+        div.card
+            p Dance Perfectly
+            div.cardbox 
+              div.card-img
+                img#1(src="/static/girl.png", alt="")
+              div.card-content 
+                p We arrange Special dancing sessions arranged according to your choices
+        div.card
+            p Expert Teaching
+             div.cardbox 
+              div.card-img 
+                img#2(src="/static/dncrs.png", alt="")
+              div.card-content 
+                p Best choreographers expert in different dance types available only for you 
+        div.card
+            p Dance the way you like
+             div.cardbox 
+              div.card-img 
+                img#3(src="/static/girl2.png", alt="")
+              div.card-content 
+                p Dance to your favorite tunes in the type of dance you are comfortable into.
+  section#sponsorsection 
+      div.sp 
+      h2 Ours Sponsors 
+       div#sponsors 
+           img(src="/static/logo12.png", alt="sponsors image", class="spimg")
+           img(src="/static/logo22.png", alt="sponsors image", class="spimg")
+           img(src="/static/logo32.png", alt="sponsors image", class="spimg")
+           img(src="/static/logo42.png", alt="sponsors image", class="spimg")
+block footer
+     footer#footer
+        | copyright 2023 &copy; MagicalMovesDanceAcademy.com | All Rights Reserved.
